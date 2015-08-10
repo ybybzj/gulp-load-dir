@@ -5,12 +5,12 @@ var $node = {
 };
 var extend = require('./lib/extend');
 var defaultOptions = {
-  taskDir: $node.path.join(process.cwd(), 'gulp','tasks')
+  dir: $node.path.join(process.cwd(), 'gulp','tasks')
 };
 exports.loadTasks = function(options){
   options = extend(defaultOptions, options);
-  var tasks = require('rqdir')(options.taskDir);
-  delete options.taskDir;
+  var tasks = require('rqdir')(options.dir);
+  delete options.dir;
   Object.keys(tasks).forEach(function(loaderName){
     tasks[loaderName](gulp, $, options);
   });

@@ -1,5 +1,5 @@
 {
-  "name": "gulp-load-tasks",
+  "name": "gulp-load-dir",
   "version": "0.1.0",
   "description": "module for load gulp tasks from a designated dir",
   "main": "index.js",
