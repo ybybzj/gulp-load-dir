@@ -5,7 +5,7 @@ var $node = {
 };
 var extend = require('./lib/extend');
 var defaultOptions = {
-  taskDir: $node.path.join(process.cwd(), 'tasks')
+  taskDir: $node.path.join(process.cwd(), 'gulp','tasks')
 };
 exports.loadTasks = function(options){
   options = extend(defaultOptions, options);
