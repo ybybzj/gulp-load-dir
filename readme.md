@@ -22,7 +22,7 @@ Then you can seperate your tasks into files and put them in 'gulp/tasks' directo
 You can also pass in options, and designate the tasks directory if you will
 ```js
 require('gulp-load-dir')({
-  dir: require('path').join(__dirname, 'gulp-tasks'),
+  taskDir: require('path').join(__dirname, 'gulp-tasks'),
   pkg: require('./package.json'),
   cfg: require('./config.json')
 });
