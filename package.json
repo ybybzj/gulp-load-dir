@@ -1,0 +1,20 @@
+{
+  "name": "gulp-load-tasks",
+  "version": "0.1.0",
+  "description": "module for load gulp tasks from a designated dir",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "task-loader",
+    "gulp"
+  ],
+  "author": "jackzj",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^0.10.0",
+    "rqdir": "^1.0.4"
+  }
+}
