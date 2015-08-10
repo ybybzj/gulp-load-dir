@@ -1,6 +1,6 @@
 {
   "name": "gulp-load-dir",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "module for load gulp tasks from a designated dir",
   "main": "index.js",
   "scripts": {
