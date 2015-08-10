@@ -7,7 +7,7 @@ var extend = require('./lib/extend');
 var defaultOptions = {
   dir: $node.path.join(process.cwd(), 'gulp','tasks')
 };
-exports.loadTasks = function(options){
+module.exports = function loadTasks(options){
   options = extend(defaultOptions, options);
   var tasks = require('rqdir')(options.dir);
   delete options.dir;
