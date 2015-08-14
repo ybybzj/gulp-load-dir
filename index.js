@@ -1,4 +1,3 @@
-var gulp = require('gulp');
 var loadPlugins = require('gulp-load-plugins');
 var $node = {
   path: require('path')
@@ -10,7 +9,7 @@ var defaultOptions = {
   pkgFile: $node.path.join(process.cwd(), 'package.json')
 };
 
-module.exports = function loadTasks(options){
+module.exports = function loadTasks(gulp, options){
   options = extend(defaultOptions, options);
   var tasks = require('rqdir')(options.taskDir);
   var $ = loadPlugins({

@@ -17,7 +17,6 @@
   "author": "jackzj",
   "license": "ISC",
   "dependencies": {
-    "gulp": "^3.9.0",
     "gulp-load-plugins": "^0.10.0",
     "rqdir": "^1.0.4"
   }
