@@ -16,7 +16,7 @@ module.exports = function loadTasks(gulp, options){
     config: options.pkgFile,
   });
   try{
-  options.gulpCfg = require($node.path.resolve(options.taskDir, 'config.json'));
+  options.gulpCfg = require($node.path.resolve(options.taskDir, options.configPath||'../config.json'));
   }catch(e){
     console.warn('[gulp-load-plugins]Cannot load gulp task configuration!');
   }
