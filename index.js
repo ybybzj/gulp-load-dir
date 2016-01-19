@@ -15,6 +15,11 @@ module.exports = function loadTasks(gulp, options){
   var $ = loadPlugins({
     config: options.pkgFile,
   });
+  try{
+  options.gulpCfg = require($node.path.resolve(options.taskDir, 'config.json'));
+  }catch(e){
+    console.warn('[gulp-load-plugins]Cannot load gulp task configuration!');
+  }
   Object.keys(tasks).forEach(function(loaderName){
     tasks[loaderName](gulp, $, options);
   });
